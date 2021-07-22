@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Afip Get Token.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- REFERENCIA a mi archivo de estilos CSS -->
+    <link rel="stylesheet" href="css/afip_get_token.css">
+</head>
+
+<body>
+    <h3>AFIP Get Token</h3>
+
+    <div class="form-group row">
+        <div class="col-md-12">
+            <label for="nombre_sistema">Sistema origen</label>
+            <input class="form-control" required type="text" value="JS_Site" id="nombre_sistema" name="nombre">
+        </div>
+    </div>
+
+    <h4>Token a obtener...</h4>
+    <select name="Cuit">
+        <option value="0"> 30572975831
+        <option value="1"> 30639453738
+        <option value="2"> 30650403971
+        <option value="3"> 30679588369
+    </select>
+
+    <select name="Servicio">
+        <option value="0"> wsfe
+        <option value="1"> wsfex
+        <option value="2"> wsfecred
+        <option value="3"> wscdc
+    </select>
+
+    <button onclick="obtDatos()">Obtener datos</button>
+
+    <script src="./scripts/afip_get_token.js"></script>
+  
+
+
+    <div id="principal">
+        <h2></h2>
+        <button onclick="getElementById('demo').innerHTML = Date()">Que hora es?</button>
+        <p id="demo"></p>
+    </div>
+
+    <div id="principal2">
+        <h4 id="prin3">Los datos obtenidos al consumir la API REST son:</h4>
+    </div>
+
+    <div id="json_element_ciudad"></div>
+
+    <div id="json_element_temperatura"></div>
+
+    <div id="json_element_estado"></div>
+
+    <h5></h5>
+
+    <div id="fecha_hora_consulta"></div>
+
+    <h2></h2>
+
+    <div id="json_obtenido"></div>
+
+</body>
+
+</html>
