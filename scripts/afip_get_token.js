@@ -68,7 +68,8 @@ function obtDatos2() {
     //document.write(JSON.stringify(json));
 
     // busca el elemento en el HTML y le asigna el JSON para mostrar en pantalla
-    document.getElementById('json_obtenido').innerHTML = "JSON obtenido en el HTTP GET de la API REST: <br>" + JSON.stringify(json);
+    document.getElementById('json_obtenido').innerHTML = "JSON obtenido en el HTTP GET de la API REST: <br><br>" + JSON.stringify(json);
+    document.getElementById('prin3').innerHTML = "Los datos obtenidos al consumir la API REST son:";
     document.getElementById('json_element_ciudad').innerHTML = "Ciudad: " + json.name;
     document.getElementById('json_element_temperatura').innerHTML = "Temperatura: " + (json.main.temp - 273) + "°C";
     //document.getElementById('json_element_estado').innerHTML = "Estado: " + json.current.weather_descriptions[0];
@@ -80,7 +81,7 @@ function obtDatos2() {
 
     document.body.style.background = "#f3f3f3";
 
-    document.getElementById("prin3").visibility='hidden';
+    
 
 
 
